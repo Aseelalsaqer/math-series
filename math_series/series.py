@@ -21,4 +21,4 @@ def sum_series(n, n1=0, n2=1):
     elif n1 == 2 and n2 == 1:
         return lucas(n)
     else:
-        return (sum_series(n-1) + sum_series(n-2))
+        return (sum_series(n-1, n1, n2) + sum_series(n-2, n1, n2))
